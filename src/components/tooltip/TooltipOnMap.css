@@ -1,0 +1,14 @@
+.TooltipOnMap {
+  padding: 1px 5px 1px 10px !important;
+  background-color: #ffffff !important;
+  color: #0C2231 !important;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 599 !important;
+}
+
+.leaflet-tooltip-right {
+  /* top: 10% !important; */
+	margin-top: -17px !important;
+}

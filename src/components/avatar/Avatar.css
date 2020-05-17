@@ -1,0 +1,18 @@
+.Avatar {
+  width: 80px;
+  height: 80px;
+  border: 2px solid brown;
+  border-radius: 50%;
+}
+
+.Avatar.Avatar--redBorder {
+  border-color: #b22222;
+}
+
+.Avatar.Avatar--greenBorder {
+  border-color: #1e824c;
+}
+
+.Avatar.Avatar--tawnyBorder {
+  border-color: #aa5d00;
+}

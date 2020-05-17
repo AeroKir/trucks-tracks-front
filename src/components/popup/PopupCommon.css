@@ -1,0 +1,95 @@
+/* Use !important to override leaflet.css default styles. Solve it another way in the future */
+
+.leaflet-popup-content-wrapper {
+  width: 400px !important;
+  height: 300px !important;
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  color: #0C2231 !important;
+}
+
+.leaflet-popup-content {
+  width: 400px !important;
+  height: 300px;
+  margin: 10px 10px !important;
+}
+
+.leaflet-popup-content p {
+  margin: 0 !important;
+}
+
+.leaflet-popup-close-button {
+  font-size: 20px !important;
+}
+
+.Popup-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Popup-content {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.Popup-additionalContent {
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: #aa5d00;
+}
+
+.Popup-additionalContent.Popup-additionalContent--redColor {
+  color: #b22222;
+}
+
+.Popup-additionalContent.Popup-additionalContent--greenColor {
+  color: #1e824c;
+}
+
+.Popup-additionalContent.Popup-additionalContent--tawnyColor {
+  color: #aa5d00;
+}
+
+.Popup-mainHeading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.Popup-secondaryHeading {
+  font-size: 14px;
+}
+
+.Popup-span {
+  color: #708080;
+}
+
+.u-visuallyHidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Media queries */
+
+@media (max-width: 359px) {
+  .leaflet-popup-content-wrapper {
+    width: 280px !important;
+  }
+  .leaflet-popup-content {
+    width: 280px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 550px) {
+  .leaflet-popup-content-wrapper {
+    width: 300px !important;
+  }
+  .leaflet-popup-content {
+    width: 300px !important;
+  }
+}
