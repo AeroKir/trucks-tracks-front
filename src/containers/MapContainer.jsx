@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import L from 'leaflet';
-import { Map, TileLayer, LayersControl, LayerGroup } from 'react-leaflet';
+import {
+  Map,
+  TileLayer,
+  LayersControl,
+  LayerGroup,
+} from 'react-leaflet';
 
 import DriversLayer from '../layers/DriversLayer';
 
@@ -20,7 +25,7 @@ class MapContainer extends Component {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
         <LayersControl>
-          <Overlay name="Drivers">
+          <Overlay name="Drivers" checked>
             <LayerGroup>
               <DriversLayer />
             </LayerGroup>
@@ -29,7 +34,6 @@ class MapContainer extends Component {
       </Map>
     );
   }
-
 }
 
 export default MapContainer;
