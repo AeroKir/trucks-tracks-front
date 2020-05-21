@@ -1,4 +1,5 @@
 import React from 'react';
+import L from 'leaflet';
 import { Popup } from 'react-leaflet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -7,7 +8,7 @@ import Avatar from '../avatar/Avatar';
 import './PopupCommon.css';
 
 function PopupCommon({
-  className, headerContent, src, alt, isBroken, isDriving, isStopped,
+  className, position, currentLocation, headerContent, src, alt, isBroken, isDriving, isStopped,
 }) {
   const popupStyles = classNames(
     'leaflet-popup-content-wrapper leaflet-popup',
@@ -32,7 +33,7 @@ function PopupCommon({
   );
 
   return (
-    <Popup className={popupStyles}>
+    <Popup className={popupStyles} position={position}>
       <div className={popupContentStyles}>
         <header className={popupHeaderStyles}>
           <Avatar
@@ -64,7 +65,7 @@ function PopupCommon({
           <p>
             <span className="Popup-span">Current location</span>
             <span>
-              Poltava
+              {currentLocation}
             </span>
           </p>
         </section>
