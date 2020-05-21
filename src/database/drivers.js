@@ -63,6 +63,22 @@ const drivers = [
     currentPosition: [49.58605, 34.54308],
     driverStatus: 2,
   },
+  {
+    id: 9,
+    firstName: 'Margaret',
+    lastName: 'Tatcher',
+    avtarUrl: require('../assets/avatars/robot-01.svg'),
+    currentPosition: [49.953098, 18.446045],
+    driverStatus: 0,
+  },
+  {
+    id: 10,
+    firstName: 'Don',
+    lastName: 'Korleone',
+    avtarUrl: require('../assets/avatars/malcolm-x.svg'),
+    currentPosition: [53.518809, 10.023748],
+    driverStatus: 2,
+  },
 ];
 
 export default drivers;
