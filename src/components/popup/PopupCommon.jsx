@@ -4,6 +4,7 @@ import { Popup } from 'react-leaflet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Avatar from '../avatar/Avatar';
+import Button from '../button/Button';
 
 import './PopupCommon.css';
 
@@ -69,6 +70,9 @@ function PopupCommon({
             </span>
           </p>
         </section>
+        <footer>
+          <Button buttonText="Send a message" />
+        </footer>
       </div>
     </Popup>
   );
