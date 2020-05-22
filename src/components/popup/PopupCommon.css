@@ -2,7 +2,6 @@
 
 .leaflet-popup-content-wrapper {
   width: 400px !important;
-  height: 300px !important;
   border-radius: 5px !important;
   background-color: #ffffff !important;
   color: #0C2231 !important;
@@ -10,7 +9,6 @@
 
 .leaflet-popup-content {
   width: 400px !important;
-  height: 300px;
   margin: 10px 10px !important;
 }
 
