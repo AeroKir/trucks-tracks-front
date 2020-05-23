@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import './Button.css';
 
 function Button({
-  className, onClick, disabled, centered, buttonText, secondaryButton,
+  className, onClick, disabled, centered, visible, buttonText, secondaryButton,
 }) {
   const onClickAction = (e) => {
     if (disabled) {
@@ -20,6 +20,7 @@ function Button({
     {
       'is-disabled': disabled,
       'is-centered': centered,
+      'is-visible': visible,
       'Button--secondary': secondaryButton,
     },
   );
@@ -41,6 +42,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
   centered: PropTypes.bool,
+  visible: PropTypes.bool,
   buttonText: PropTypes.string,
   secondaryButton: PropTypes.bool,
 };
@@ -50,6 +52,7 @@ Button.defaultProps = {
   onClick: () => { },
   disabled: false,
   centered: false,
+  visible: true,
   buttonText: 'Button',
   secondaryButton: false,
 };
