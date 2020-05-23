@@ -10,7 +10,7 @@ import Button from '../button/Button';
 import './PopupCommon.css';
 
 function PopupCommon({
-  className, position, currentLocation, headerContent, src, alt, isBroken, isDriving, isStopped,
+  className, position, currentLocation, headerContent, src, alt, isBroken, isDriving, isStopped, label, id
 }) {
   const popupStyles = classNames(
     'leaflet-popup-content-wrapper leaflet-popup',
@@ -77,17 +77,19 @@ function PopupCommon({
         </header>
         <section className="Popup-section">
           <h3 className="u-visuallyHidden">Popup section</h3>
-          <p>
+          <p className="Popup-sectionContent">
             <span className="Popup-span">Last updated</span>
+            {' '}
             <span>17:22 15-05-2020</span>
           </p>
-          <p>
+          <p className="Popup-sectionContent">
             <span className="Popup-span">Current location</span>
+            {' '}
             <span>
               {currentLocation}
             </span>
           </p>
-          {messageTextarea && <Textarea />}
+          {messageTextarea && <Textarea label={label} id={id} />}
         </section>
         <footer className="Popup-footer">
           <Button buttonText={messageButtonText} onClick={writeMessageHandler} />
