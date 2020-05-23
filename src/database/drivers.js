@@ -6,6 +6,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/avatar.jpg'),
     currentPosition: [49.97931, 36.2645],
     driverStatus: 0,
+    driverStatusExplanation: 'moving',
+    vehicle: 'Scania001',
+    currentSpeed: 10,
   },
   {
     id: 2,
@@ -14,6 +17,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/batman.svg'),
     currentPosition: [49.82762, 36.32973],
     driverStatus: 0,
+    driverStatusExplanation: 'moving',
+    vehicle: 'Scania002',
+    currentSpeed: 37,
   },
   {
     id: 3,
@@ -22,6 +28,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/charlie-chaplin.svg'),
     currentPosition: [49.69819, 36.35925],
     driverStatus: 1,
+    driverStatusExplanation: 'on loading',
+    vehicle: 'Scania003',
+    currentSpeed: 0,
   },
   {
     id: 4,
@@ -30,6 +39,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/robot-02.svg'),
     currentPosition: [49.58852, 36.34724],
     driverStatus: 0,
+    driverStatusExplanation: 'moving',
+    vehicle: 'Scania004',
+    currentSpeed: 5,
   },
   {
     id: 5,
@@ -38,6 +50,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/matrix-trinity.svg'),
     currentPosition: [49.81813, 36.05164],
     driverStatus: 0,
+    driverStatusExplanation: 'moving',
+    vehicle: 'Scania005',
+    currentSpeed: 7,
   },
   {
     id: 6,
@@ -46,6 +61,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/brazilian-native-man.svg'),
     currentPosition: [50.44767, 30.52002],
     driverStatus: -1,
+    driverStatusExplanation: 'breakage',
+    vehicle: 'Scania006',
+    currentSpeed: 0,
   },
   {
     id: 7,
@@ -54,6 +72,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/barack-obama.svg'),
     currentPosition: [49.84028, 24.02298],
     driverStatus: 1,
+    driverStatusExplanation: 'on loading',
+    vehicle: 'Scania007',
+    currentSpeed: 0,
   },
   {
     id: 8,
@@ -62,6 +83,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/muslim-man.svg'),
     currentPosition: [49.58605, 34.54308],
     driverStatus: 2,
+    driverStatusExplanation: 'on unloading',
+    vehicle: 'Scania008',
+    currentSpeed: 0,
   },
   {
     id: 9,
@@ -70,6 +94,9 @@ const drivers = [
     avtarUrl: require('../assets/avatars/robot-01.svg'),
     currentPosition: [49.953098, 18.446045],
     driverStatus: 0,
+    driverStatusExplanation: 'moving',
+    vehicle: 'Scania009',
+    currentSpeed: 80,
   },
   {
     id: 10,
@@ -77,7 +104,10 @@ const drivers = [
     lastName: 'Korleone',
     avtarUrl: require('../assets/avatars/malcolm-x.svg'),
     currentPosition: [53.518809, 10.023748],
-    driverStatus: 2,
+    driverStatus: 3,
+    driverStatusExplanation: 'rest pause',
+    vehicle: 'Scania010',
+    currentSpeed: 0,
   },
 ];
 
