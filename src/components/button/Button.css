@@ -1,6 +1,14 @@
 .Button {
-  padding: 10px 10px;
+  padding: 8px 10px;
   border: none;
+  border-radius: 5px;
   background-color: #778899;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.Button.Button--secondary {
+  border: 2px solid #778899;
+  color: #0C2231;
+  background-color: #ffffff;
 }
