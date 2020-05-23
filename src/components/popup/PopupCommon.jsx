@@ -4,6 +4,7 @@ import { Popup } from 'react-leaflet';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Avatar from '../avatar/Avatar';
+import Textarea from '../textarea/Textarea';
 import Button from '../button/Button';
 
 import './PopupCommon.css';
@@ -57,7 +58,7 @@ function PopupCommon({
             <p className={popupAdditionalContentStyles}>Loading</p>
           </div>
         </header>
-        <section>
+        <section className="Popup-section">
           <h3 className="u-visuallyHidden">Popup section</h3>
           <p>
             <span className="Popup-span">Last updated</span>
@@ -69,9 +70,11 @@ function PopupCommon({
               {currentLocation}
             </span>
           </p>
+          <Textarea />
         </section>
-        <footer>
+        <footer className="Popup-footer">
           <Button buttonText="Send a message" />
+          <Button buttonText="Cancel" secondaryButton />
         </footer>
       </div>
     </Popup>
