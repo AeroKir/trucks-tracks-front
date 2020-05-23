@@ -61,6 +61,8 @@ function DriversLayer() {
         isDriving={driver.driverStatus === 0}
         isStopped={driver.driverStatus > 0}
         currentLocation={driverCurrentLocation.display_name}
+        label={`Message to ${driver.firstName}`}
+        id={driver.id}
       />
       <TooltipOnMap tooltipContent={driver.firstName} />
     </Marker>
