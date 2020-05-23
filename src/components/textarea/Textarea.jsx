@@ -69,7 +69,7 @@ Textarea.defaultProps = {
   className: '',
   label: '',
   name: '',
-  placeholder: 'Textarea placeholder',
+  placeholder: '',
   onChange: () => { },
   onBlur: () => { },
   error: false,
