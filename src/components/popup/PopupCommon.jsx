@@ -10,7 +10,7 @@ import Button from '../button/Button';
 import './PopupCommon.css';
 
 function PopupCommon({
-  className, position, currentLocation, headerContent, secondaryHeaderContent, src, alt, isBroken, isDriving, isStopped, label, id
+  className, position, currentLocation, headerContent, secondaryHeaderContent, popupContent, additionalPopupContent, src, alt, isBroken, isDriving, isStopped, label, id
 }) {
   const popupStyles = classNames(
     'leaflet-popup-content-wrapper leaflet-popup',
@@ -70,9 +70,9 @@ function PopupCommon({
           </div>
           <div className="Popup-content">
             <span className="Popup-span">Current speed</span>
-            <p className={popupAdditionalContentStyles}>0 km/h</p>
+            <p className={popupAdditionalContentStyles}>{popupContent}</p>
             <span className="Popup-span">Current status</span>
-            <p className={popupAdditionalContentStyles}>Loading</p>
+            <p className={popupAdditionalContentStyles}>{additionalPopupContent}</p>
           </div>
         </header>
         <section className="Popup-section">
