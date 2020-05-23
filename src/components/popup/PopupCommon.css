@@ -76,6 +76,10 @@
   width: 90%;
 }
 
+.Popup-sectionContent {
+  padding-bottom: 10px;
+}
+
 .Popup-footer {
   width: 90%;
   display: flex;
