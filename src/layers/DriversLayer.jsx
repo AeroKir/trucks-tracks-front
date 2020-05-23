@@ -58,7 +58,7 @@ function DriversLayer() {
         headerContent={`${driver.firstName} ${driver.lastName}`}
         secondaryHeaderContent={driver.vehicle}
         popupContent={`${driver.currentSpeed} km/h`}
-        additionalPopupContent={driver.driverStatusExplanation}
+        additionalPopupContent={driver.driverStatusExplanation.toUpperCase()}
         src={driver.avtarUrl}
         alt={`${driver.firstName} ${driver.lastName}`}
         isBroken={driver.driverStatus < 0}
