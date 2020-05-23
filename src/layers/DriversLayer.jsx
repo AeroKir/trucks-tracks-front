@@ -57,6 +57,8 @@ function DriversLayer() {
       <PopupCommon
         headerContent={`${driver.firstName} ${driver.lastName}`}
         secondaryHeaderContent={driver.vehicle}
+        popupContent={`${driver.currentSpeed} km/h`}
+        additionalPopupContent={driver.driverStatusExplanation}
         src={driver.avtarUrl}
         alt={`${driver.firstName} ${driver.lastName}`}
         isBroken={driver.driverStatus < 0}
