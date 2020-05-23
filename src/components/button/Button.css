@@ -1,4 +1,5 @@
 .Button {
+  position: relative;
   padding: 8px 10px;
   border: none;
   border-radius: 5px;
@@ -7,10 +8,48 @@
   cursor: pointer;
 }
 
+.Button:hover {
+  background-color: #9bacb8;
+}
+
+.Button:focus {
+  background-color: #9bacb8;
+  outline: none;
+}
+
+.Button:focus::before, .Button:focus::after {
+  content: '';
+  position: absolute;
+  width: 103%;
+  height: 111%;
+  left: -2px;
+  top: -2px;
+  opacity: 0.5;
+  border: 2px solid #5f6d7f;
+  border-radius: 7px;
+}
+
 .Button.Button--secondary {
   border: 2px solid #778899;
   color: #0C2231;
   background-color: #ffffff;
+}
+
+.Button.Button--secondary:hover {
+  border-color: rgba(151, 151, 151, 0.5);
+  color: #394e5a;
+}
+
+.Button.Button--secondary:focus::before, .Button.Button--secondary:focus::after {
+  content: '';
+  position: absolute;
+  width: 112%;
+  height: 127%;
+  left: -4px;
+  top: -4px;
+  opacity: 0.5;
+  border: 2px solid #30384a;
+  border-radius: 7px;
 }
 
 .Button.is-hidden {
