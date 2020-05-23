@@ -38,6 +38,7 @@ function DriversLayer() {
 
   console.log(driverCurrentLocation);
 
+  
   const driversPosition = drivers.map((driver) => (
     <Marker
       key={driver.id}
