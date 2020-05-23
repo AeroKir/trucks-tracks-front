@@ -5,11 +5,21 @@ import classNames from 'classnames';
 import './Textarea.css';
 
 function Textarea({
-  id, className, label, name, placeholder, onChange, onBlur, error, errorMessage,
+  id,
+  className,
+  label,
+  name,
+  placeholder,
+  onChange,
+  onBlur,
+  error,
+  errorMessage,
+  hidden,
 }) {
   const wrapperClasses = classNames(
     'TextareaWrapper',
     className,
+    { 'is-hidden': hidden },
   );
 
   const labelClasses = classNames(
@@ -52,6 +62,7 @@ Textarea.propTypes = {
   onBlur: PropTypes.func,
   error: PropTypes.bool,
   errorMessage: PropTypes.string,
+  hidden: PropTypes.bool,
 };
 
 Textarea.defaultProps = {
@@ -63,6 +74,7 @@ Textarea.defaultProps = {
   onBlur: () => { },
   error: false,
   errorMessage: '',
+  hidden: false,
 };
 
 export default Textarea;
