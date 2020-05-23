@@ -72,6 +72,16 @@
   pointer-events: none;
 }
 
+.Popup-section {
+  width: 90%;
+}
+
+.Popup-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Media queries */
 
 @media (max-width: 359px) {
