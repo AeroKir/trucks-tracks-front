@@ -12,3 +12,7 @@
   color: #0C2231;
   background-color: #ffffff;
 }
+
+.Button.is-hidden {
+  display: none;
+}
