@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import L from 'leaflet';
 import { Popup } from 'react-leaflet';
 import PropTypes from 'prop-types';
@@ -33,6 +33,23 @@ function PopupCommon({
       'Popup-additionalContent--tawnyColor': isStopped,
     },
   );
+
+  const [messageTextarea, setMessageTextarea] = useState(false);
+  const [messageButtonText, setMessageButtonText] = useState('Write a message');
+  const [cancelButton, setCancelButton] = useState(false);
+
+  function writeMessageHandler() {
+    setMessageTextarea(true);
+    setMessageButtonText('Send a message');
+    setCancelButton(true);
+  }
+
+  function cancelMessageHandler() {
+    setMessageTextarea(false);
+    setCancelButton(false);
+    setMessageButtonText('Write a message');
+  }
+
 
   return (
     <Popup className={popupStyles} position={position}>
@@ -70,11 +87,11 @@ function PopupCommon({
               {currentLocation}
             </span>
           </p>
-          <Textarea />
+          {messageTextarea && <Textarea />}
         </section>
         <footer className="Popup-footer">
-          <Button buttonText="Send a message" />
-          <Button buttonText="Cancel" secondaryButton />
+          <Button buttonText={messageButtonText} onClick={writeMessageHandler} />
+          {cancelButton && <Button buttonText="Cancel" secondaryButton onClick={cancelMessageHandler} />}
         </footer>
       </div>
     </Popup>
